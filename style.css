@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #30363d;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+}
+
+header p {
+    margin-top: 0.5rem;
+    color: #8b949e;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    margin: 0 0.5rem;
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #58a6ff;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skills li {
+    background: #161b22;
+    margin: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background: #161b22;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.project-card h3 {
+    color: #c9d1d9;
+    margin-bottom: 0.5rem;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+}
