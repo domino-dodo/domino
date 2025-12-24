@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Gemini Edition</title>
+    <title>Kyaw Zaw Tun | Senior Software Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,41 +11,76 @@
     <div class="gemini-bg"></div>
     
     <nav>
-        <div class="logo">GEMINI<span>.IO</span></div>
+        <div class="logo">KZT<span>.DEV</span></div>
         <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="mailto:kyawzawtun220589@gmail.com">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <section class="hero">
-            <h1 class="reveal-text">Designing the <span>Future</span></h1>
-            <p class="fade-in">Full-stack developer specializing in AI-driven interfaces and fluid user experiences.</p>
+            <h1 class="reveal-text">Kyaw Zaw <span>Tun</span></h1>
+            <p class="fade-in">Senior Software Developer & Project Manager with 9+ years of expertise in Backend Architecture and AI-integrated systems.</p>
             <div class="cta-group">
-                <a href="#projects" class="btn primary">View Work</a>
-                <a href="#" class="btn secondary">Resume</a>
+                <a href="#experience" class="btn primary">View Experience</a>
+                <a href="https://linkedin.com/in/kyawzawtun" class="btn secondary">LinkedIn</a>
             </div>
         </section>
 
-        <section id="projects" class="project-grid">
+        <section id="experience" class="project-grid">
             <div class="card">
                 <div class="card-glow"></div>
                 <div class="content">
-                    <h3>Neural Interface</h3>
-                    <p>A web-based LLM dashboard with real-time streaming.</p>
-                    <span class="tag">React</span> <span class="tag">Gemini API</span>
+                    <span class="date">2024 - Present</span>
+                    <h3>Remote Backend Developer</h3>
+                    <p>Architecting core AI-driven backends for agricultural technology and pest control applications.</p>
+                    <span class="tag">AI/ML Integration</span> <span class="tag">REST APIs</span>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-glow"></div>
                 <div class="content">
-                    <h3>Stellar UI</h3>
-                    <p>A design system built for deep-space aesthetics.</p>
-                    <span class="tag">TypeScript</span> <span class="tag">CSS3</span>
+                    <span class="date">2022 - 2024</span>
+                    <h3>Deputy Manager (MPT)</h3>
+                    <p>Led digital transformation for 3,000+ employees, improving workflow efficiency by 40%.</p>
+                    <span class="tag">Enterprise Solutions</span> <span class="tag">Team Leadership</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-glow"></div>
+                <div class="content">
+                    <span class="date">2014 - 2016</span>
+                    <h3>POS Developer</h3>
+                    <p>Developed NFC payment systems and Android apps with PCI compliance for True Money Myanmar.</p>
+                    <span class="tag">Fintech</span> <span class="tag">NFC</span> <span class="tag">Android</span>
                 </div>
             </div>
         </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Technical Constellation</h2>
+            <div class="skill-tags">
+                <span>Python</span> <span>Django</span> <span>C# .NET</span> <span>ASP.NET</span> 
+                <span>React</span> <span>PostgreSQL</span> <span>AWS</span> <span>Linux</span>
+            </div>
+        </section>
     </main>
+
+    <script>
+        // Interactive glow effect for cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.onmousemove = e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            };
+        });
+    </script>
 </body>
 </html>
