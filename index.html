@@ -1,260 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kyaw Zaw Tun | Python & Django Developer</title>
-  <meta name="description" content="Kyaw Zaw Tun – Python & Django Backend Developer Portfolio" />
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0f172a;
-      --accent: #2563eb;
-      --text: #334155;
-      --muted: #64748b;
-      --bg: #f8fafc;
-      --card: #ffffff;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    /* HEADER */
-    header {
-      background: var(--primary);
-      color: #fff;
-      padding: 80px 0 70px;
-    }
-
-    header h1 {
-      font-size: 44px;
-      margin: 0;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 18px;
-      margin: 10px 0 25px;
-      color: #cbd5f5;
-    }
-
-    .header-actions a {
-      display: inline-block;
-      margin-right: 12px;
-      padding: 10px 18px;
-      border-radius: 6px;
-      background: var(--accent);
-      color: #fff;
-      font-weight: 500;
-    }
-
-    .header-actions a.secondary {
-      background: transparent;
-      border: 1px solid #475569;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 70px 0;
-    }
-
-    section h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
-      color: var(--primary);
-    }
-
-    /* ABOUT */
-    .about {
-      max-width: 750px;
-      font-size: 17px;
-    }
-
-    /* SKILLS */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .skill {
-      background: var(--card);
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .skill strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--primary);
-    }
-
-    /* PROJECTS */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-
-    .project {
-      background: var(--card);
-      padding: 25px;
-      border-radius: 12px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .project h3 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    .project p {
-      color: var(--muted);
-    }
-
-    /* EXPERIENCE */
-    .experience {
-      max-width: 900px;
-    }
-
-    .job {
-      margin-bottom: 35px;
-    }
-
-    .job-title {
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    .job-period {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #020617;
-      color: #94a3b8;
-      padding: 40px 0;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    footer a { color: #93c5fd; }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 34px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyaw Zaw Tun - Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    font-family: "Segoe UI", Arial;
+    margin: 0;
+    padding: 0;
+    background: #eef2f7;
+    color: #0f172a;
+}
+header {
+    background: #1e293b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+header h2 {
+    color: #38bdf8;
+    margin: 5px 0 0 0;
+    font-weight: normal;
+}
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+h3 {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+p, li {
+    line-height: 1.6;
+    font-size: 14px;
+}
+ul {
+    padding-left: 18px;
+}
+.contact a {
+    text-decoration: none;
+    color: #0f172a;
+}
+.contact i {
+    color: #38bdf8;
+    margin-right: 8px;
+}
+.skills li {
+    margin-bottom: 6px;
+}
+.project-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f9fafb;
+}
+.project-card h4 {
+    margin: 0 0 5px 0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+</style>
 </head>
 <body>
 
 <header>
-  <div class="container">
     <h1>Kyaw Zaw Tun</h1>
-    <p>Python & Django Backend Developer</p>
-    <div class="header-actions">
-      <a href="mailto:kyawzawtun220589@gmail.com">Contact Me</a>
-      <a href="https://github.com/domino-dodo" class="secondary" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/kyaw-zaw-tun-38088538a/" class="secondary" target="_blank">LinkedIn</a>
-    </div>
-  </div>
+    <h2>Senior Software Developer | Project Manager</h2>
 </header>
 
 <section>
-  <div class="container about">
-    <h2>About Me</h2>
-    <p>
-      I am a Python & Django Backend Developer with experience building secure REST APIs,
-      database-driven web applications, and enterprise backend systems. I focus on clean code,
-      maintainable architecture, and solving real business problems. I am available for
-      full-time, contract, and freelance work.
-    </p>
-  </div>
-</section>
-
-<section style="background:#f1f5f9;">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill"><strong>Python</strong>Backend development, automation</div>
-      <div class="skill"><strong>Django</strong>CRUD, Auth, Admin, REST APIs</div>
-      <div class="skill"><strong>Databases</strong>PostgreSQL, SQLite, MySQL</div>
-      <div class="skill"><strong>APIs</strong>Django REST Framework</div>
-      <div class="skill"><strong>Tools</strong>Git, GitHub, PyCharm</div>
-      <div class="skill"><strong>Systems</strong>Linux (Ubuntu), Windows</div>
-    </div>
-  </div>
+    <h3>Contact</h3>
+    <p class="contact"><i class="fa-solid fa-envelope"></i> <a href="mailto:kyawzawtun220589@gmail.com">kyawzawtun220589@gmail.com</a></p>
+    <p class="contact"><i class="fa-solid fa-phone"></i> +66 918180054</p>
+    <p class="contact"><i class="fa-solid fa-phone"></i> +95 9423009448</p>
+    <p class="contact"><i class="fa-solid fa-location-dot"></i> Yangon, Myanmar</p>
+    <p class="contact"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/kyaw-zaw-tun-38088538a/" target="_blank">LinkedIn</a></p>
+    <p class="contact"><i class="fa-brands fa-github"></i> <a href="https://github.com/domino-dodo" target="_blank">GitHub</a></p>
 </section>
 
 <section>
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Task Management System</h3>
-        <p>Django-based system with authentication, CRUD operations, and REST APIs.</p>
-        <a href="https://github.com/domino-dodo" target="_blank">View on GitHub →</a>
-      </div>
-      <div class="project">
-        <h3>Inventory Management System</h3>
-        <p>Product and stock management system with admin panel and reporting features.</p>
-        <a href="https://github.com/domino-dodo" target="_blank">View on GitHub →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="background:#f1f5f9;">
-  <div class="container experience">
-    <h2>Experience</h2>
-
-    <div class="job">
-      <div class="job-title">Python / Django Backend Developer – Mirai Scien</div>
-      <div class="job-period">Oct 2024 – Present</div>
-      <p>Developing Django backend systems and REST APIs, integrating AI services, and improving backend performance.</p>
-    </div>
-
-    <div class="job">
-      <div class="job-title">Backend Developer – Myanmar Post and Telecommunication (MPT)</div>
-      <div class="job-period">Feb 2022 – Oct 2024</div>
-      <p>Built backend services and workflow automation systems supporting over 3,000 internal users.</p>
-    </div>
-  </div>
+    <h3>Professional Summary</h3>
+    <p>Results-driven Senior Software Developer with 9+ years of experience in full-stack development, project management, and team leadership. Specialized in scalable web applications, AI-integrated systems, and enterprise solutions across telecom, fintech, and agricultural technology sectors.</p>
 </section>
 
 <section>
-  <div class="container">
-    <h2>Education</h2>
-    <p><strong>BSc (Hons) in Business IT</strong> – University of Greenwich, UK</p>
-  </div>
+    <h3>Skills</h3>
+    <ul class="skills">
+        <li>Python</li>
+        <li>C#.NET</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C/C++</li>
+        <li>Django</li>
+        <li>ASP.NET MVC</li>
+        <li>React + Redux</li>
+        <li>Laravel</li>
+        <li>PostgreSQL / MySQL / MSSQL</li>
+        <li>Git</li>
+        <li>Power BI</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Projects</h3>
+    
+    <div class="project-card">
+        <h4>Django AI Pest Diagnosis</h4>
+        <p>Developed backend infrastructure for AI pest diagnosis systems. Built scalable REST APIs used by thousands of farmers.</p>
+    </div>
+
+    <div class="project-card">
+        <h4>Power BI Reports</h4>
+        <p>Built Power BI dashboards using data from Microsoft Dynamics ERP. Designed for business analytics and reporting.</p>
+    </div>
+
+    <div class="project-card">
+        <h4>GPS Tracking System</h4>
+        <p>Developed real-time GPS tracking APIs and dashboards for logistics management.</p>
+    </div>
+
+    <div class="project-card">
+        <h4>POS Payment System</h4>
+        <p>Developed secure POS terminal solutions with NFC and fingerprint authentication.</p>
+    </div>
+</section>
+
+<section>
+    <h3>Professional Experience</h3>
+    
+    <div class="project-card">
+        <h4>Deputy Manager – Myanmar Post & Telecommunication (MPT)</h4>
+        <p>Feb 2022 – Oct 2024</p>
+        <ul>
+            <li>Led digital transformation of workflow processes for 3,000+ employees using Kissflow.</li>
+            <li>Designed workflow applications and integrated enterprise systems to improve efficiency.</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h4>Project Manager – Innovix Solution</h4>
+        <p>Feb 2019 – Feb 2022</p>
+        <ul>
+            <li>Managed end-to-end delivery of 15+ CMS and web application projects.</li>
+            <li>Led cross-functional teams and implemented Agile methodologies.</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h4>Other Roles – Global Connect Asia, TRUE Money Myanmar, Myanmar Computer Company</h4>
+        <ul>
+            <li>Architected GPS systems, developed POS terminals, and led enterprise software projects.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h3>Education</h3>
+    <ul>
+        <li>BSc (Hons) Business Information Technology – University of Greenwich (2010–2013)</li>
+        <li>NCC UK Diploma – Computer Studies</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Achievements</h3>
+    <ul>
+        <li>Delivered 25+ enterprise software projects</li>
+        <li>Led digital transformation for 3,000+ employees</li>
+        <li>Mentored 15+ junior developers</li>
+        <li>Reduced operational costs by 30–40%</li>
+    </ul>
 </section>
 
 <footer>
-  <div class="container">
-    <p>Bangkok, Thailand • kyawzawtun220589@gmail.com • +66 918180054</p>
-    <p>© 2025 Kyaw Zaw Tun</p>
-  </div>
+    © 2026 Kyaw Zaw Tun | <a href="mailto:kyawzawtun220589@gmail.com">Email Me</a>
 </footer>
 
 </body>
